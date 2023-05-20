@@ -15,10 +15,10 @@ const cartSchema = new mongoose.Schema({
   size: {
     type: String,
     required: true,
-    default: "sm",
+    default: "S",
   },
 });
 
-const cartProductModel = mongoose.model("cart_product", cartSchema);
+const cartProductModel = mongoose.model("cart_products", cartSchema);
 
 module.exports = cartProductModel;
